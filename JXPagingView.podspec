@@ -10,10 +10,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/pujiaxin33/JXPagingView.git", :tag => "#{s.version}" }
   s.source_files  = "JXPagingView", "Sources/JXPagingView/**/*.swift"
   s.license      = "MIT"
-  s.subspec 'Pager' do |pager|
-    pager.source_files = 'JXPagerView', 'Sources/JXPagerView/**/*.{h,m}'
-    pager.resource_bundles = {"JXPagerView" => ["Sources/PrivacyInfo.xcprivacy"]}
-  end
 
   s.subspec 'Paging' do |paging|
     paging.source_files = "JXPagingView", "Sources/JXPagingView/**/*.swift"
